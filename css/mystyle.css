@@ -1,37 +1,57 @@
+body {
+	margin-top: 50px;
+}
+
 #title-bar {
 	font-size: 2.5em;
 	color: #dcdcdc;
 }
 
-/*body {
-	padding-top: 50px;
+.content {
+	height: 100vh;
+	width: 100%;
+	background-image: url("../images/image0.jpg");
+	color: white;
+	text-align: center;
+}
+
+/*.content { 
+	height: 100vh;
+	width: 100%;
+	background-size: cover;
+	background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAPCAYAAADkmO9VAAACr0lEQVQ4T02Ub4sbVRSHn3Puncm/NW5nst3qTiaBtbWaKuq31opQUFFbUwVpoYqKbT9A3ygotbuzaYuyuUfOzSw1MDPJizz8fuc5d2TevGEgJEuYGWLiP5HdDRUlqhIKZV+FWRBmhXF5bFw5Mq5eHzIcDln/0HHvCYgDDcP/bWn3BMt3ESFoQDVQRLgUhFqgLoXDceLoCI7fHRNjwZ3vz7j3uyFt86Yl+o9/c6bDxVCEKIpGBwr7CjMV6kK5PNnSNJaBIiW3v+u4/wdIOz+yzDCwjL5ICQqEENAgDIKyL0IV4KAQDvYSrSe8McJS5Mv1c3780xO2jZGRRsqV+5AGQcl1YxDKqFxSpfKUJRxOEvNGOF6NOD8v+GLd8dNfIIu2MZfx/ytTxeuCekJVRtETQuVzLIUre15ZOV6NOf9X+Hzd8eCpeuUeiEO9suvIPCIOjBk6CTD1ytGYFcLhXqKZJ95avc4/L4Vb61N+fhqQhQO9bp/ywo8LUZGdkJzQgUodEnUGGk2buHpjysuNcOtuxy8Z2DbmMCxlaN7Afg8dGIISQ2DUJzyIRuVSJlvmC+OaA8+Uz77t+PWZ9jPMQvrF3m0gQQVxKeJCIsMgTBEcWBcwGyfmS+Pae1NedMKndzp+O4mvpGTBF3voVdUta77c8EBhasJBKdQ+R1/spfH2+1Oen8LN2x2PTwtksZjnyrZ1oi92Pm+7+anXhTL0QFFmAerCqCfntAsHVmw6B57wqCt3wCxlm3Z+fZz9GdagFCoUMTAQy5Zn2TJUIwdueeeDirMu8Mk3z3rgcu4r+CphlmKIH7mc0GcYGBhM1edn+QVRjbc0iy2rDys2Z4GbX//Nw26ALJdtPikpiefsDe9eDA70hIMYKSzxmvbp/EUx3NIuEquP9nmxiXz81QmPNiX/Acr1FlZZqwHxAAAAAElFTkSuQmCC");
 }*/
 
 
-/*.content:before {
-	background-image: url("../images/image0.jpg");
-	height: 100vh;
-	width: 100%;
-	z-index: -1;
-	filter: blur(10px);
-	
-}
-*/
-.content {
-	text-align: center;
-	height: 100vh;
-	width: 100%;
-	background-image: url("../images/image0.jpg");
-/*	background-size: cover;*/
-}
-
-
-
 .contentWords {
-	margin-top: 100px;
+	margin-top: 50px;
 	color: #dcdcdc;
 }
 
 #start-button {
 	margin-top: 2em;
 }
+
+.question {
+	font-size: 2.5em;
+	padding-left: 10px;
+}
+
+.answers{
+	margin-top: 2em;
+	font-size: 1.5em;
+	text-align: initial;
+}
+
+.answers > ul {
+    list-style-type: none;
+}
+
+.answers > li {
+	padding-left: 10px;
+}
+
+.next-button {
+	margin-top: 2em;
+}
+
