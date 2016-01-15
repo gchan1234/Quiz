@@ -24,7 +24,7 @@ $(document).ready(function(){
 
 	function answersDisplay() {
 	for(var i=0; i<choiceTotal; i++) {
-		$(".answer-list").append("<li><input type='radio' name='answers' value=" + quizArray[questionNum].g[i] + '>' + " "  + quizArray[questionNum].g[i] + "</li>");
+		$(".answer-list").append("<li><input type='radio' name='answers' value=\"" + quizArray[questionNum].g[i] + "\">" + " "  + quizArray[questionNum].g[i] + "</li>");
 	}
 }
 
@@ -60,6 +60,7 @@ $(document).ready(function(){
 			return false;
 		}
 	}
+
 
 	//Program starts
 	display();
