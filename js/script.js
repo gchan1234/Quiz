@@ -45,7 +45,7 @@ $(document).ready(function(){
 
 	function checkCorrect() {
 		console.log($('input[name="answers"]:checked').val());
-		if($('input[name="answers"]:checked').val() === quizArray[questionNum].a) {
+		if($('input:radio:checked').val() == quizArray[questionNum].a) {
 				numCorrect = numCorrect + 1;
 			}
 		questionNum++;
@@ -53,11 +53,11 @@ $(document).ready(function(){
 	}
 
 	function checkInput() {
-		if ($('input[name="answers"]:checked').length == 0) {
-			alert("You must select one answer.");
-			return 1;
+		if ($('input:radio').is(':checked')) {
+			return true;
 		} else {
-			return -1;
+			alert("You must select one answer.");
+			return false;
 		}
 	}
 
@@ -65,11 +65,10 @@ $(document).ready(function(){
 	display();
 
 	$(".next-button").click(function(){
-		console.log(checkInput())
-		if(checkInput() != 1){
+	if(checkInput() != false){
 		checkCorrect();
 		$(".question h1").hide();
-		$(".answers li").hide();
+		$(".answers li").remove();
 		$(".next-button button").hide();
 		if(questionNum != questionTotal) {
 		display();
